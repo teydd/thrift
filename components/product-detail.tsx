@@ -4,6 +4,7 @@ import Image from "next/image";
 import Stripe from "stripe";
 import { Button } from "./ui/button";
 import { useCartStore } from "@/store/cart-store";
+import Link from "next/link";
 
 interface Props {
   product: Stripe.Product;
@@ -25,6 +26,7 @@ export const ProductDetail = ({ product }: Props) => {
   };
   return (
     <>
+    <Link className="text-sm text-gray-700 tracking-tight" href={"/shop"}>Back/ {product.name}/ {product.description}</Link>
       <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row gap-8 items-center shadow-lg">
         {product.images?.[0] && (
           <div className="relative h-96 w-full md:w-1/2 rounded-lg overflow-hidden flex justify-center items-center">
