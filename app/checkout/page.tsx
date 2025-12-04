@@ -48,7 +48,7 @@ export default function Checkout() {
       </Card>
       <form className='max-w-md mx-auto' action={checkoutAction}>
         <input type="hidden" name = "items" value={JSON.stringify(items)} />
-        <Button type='submit' className='w-full' variant="default">Procees to Payment</Button>
+        <Button type='submit' className='w-full' variant="default">Proceed to Payment</Button>
       </form>
     </div>
     </>
