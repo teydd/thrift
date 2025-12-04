@@ -2,7 +2,8 @@ export default function Footer() {
   return (
     <footer className="bg-gray-100 shadow-t-lg py-4 mt-8">
       <div className="container mx-auto text-center text-sm text-gray-600">
-        &copy; {new Date().getFullYear()} Thrift Store by Teddy Chemos. All rights reserved.
+        &copy; {new Date().getFullYear()} Thrift Store by Teddy Chemos. All
+        rights reserved.
       </div>
     </footer>
   );
